@@ -197,16 +197,15 @@ footer {
   color: #fff;
   text-align: right;
 }
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
 footer li {
   margin-bottom: 10px;
 }
 footer img {
   width: 100px;
+}
+@media (max-width: 991px) {
+  footer .row {
+    flex-direction: column-reverse;
+  }
 }
 /* Ending Footer */
