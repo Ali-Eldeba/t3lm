@@ -43,7 +43,6 @@ img {
 }
 .landing section {
   height: calc(100vh - 80px);
-  z-index: 10;
 }
 .landing section .container {
   display: flex;
@@ -70,6 +69,7 @@ img {
   color: blue;
   background-color: white;
   transition: 0.3s;
+  z-index: 10;
 }
 .landing section .container .text .buttons .view:hover {
   width: fit-content;
@@ -81,7 +81,6 @@ img {
   position: absolute;
   bottom: -200px;
   width: 100%;
-  /* opacity: 0.1; */
   z-index: 1;
 }
 .landing .svg1 {
@@ -122,3 +121,23 @@ img {
   }
 }
 /* Ending Landing */
+/* Starting Future */
+.future {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.future .container .box i {
+  font-size: 30px;
+}
+.future .container .gray,
+.future .container .gray {
+  color: gray;
+}
+.future .container button.gray {
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+}
+/* Ending Future */
