@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif !important;
+}
+/* Starting Landing */
+.landing {
+  background-image: linear-gradient(to bottom, #4169e1, #9cb1ef);
+}
+.landing nav {
+  height: 80px;
+  padding: 20px;
+}
+.landing nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing nav .container .logo {
+  width: 150px;
+  cursor: pointer;
+}
+.landing nav .container .buttons button {
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 25px;
+}
+.landing nav .container .buttons button:hover {
+  color: #000;
+  background-color: #fff;
+}
+.landing nav .container .buttons .sign {
+  border: 1px solid #fff;
+}
+.landing section {
+  height: calc(100vh - 80px);
+}
+.landing section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.landing section .container img {
+  width: 500px;
+}
+.landing section .container .text {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: #fff;
+  font-weight: normal;
+  align-items: flex-end;
+}
+.landing section .container .text button {
+  width: fit-content;
+  color: blue;
+  background-color: white;
+  transition: 0.3s;
+}
+.landing section .container .text button:hover {
+  width: fit-content;
+  color: #000;
+  background-color: #eee;
+}
+/* Ending Landing */
