@@ -6,9 +6,15 @@
 body {
   font-family: "Cairo", sans-serif !important;
 }
+img {
+  user-select: none;
+}
 /* Starting Landing */
 .landing {
   background-image: linear-gradient(to bottom, #4169e1, #9cb1ef);
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .landing nav {
   height: 80px;
@@ -37,6 +43,7 @@ body {
 }
 .landing section {
   height: calc(100vh - 80px);
+  z-index: 10;
 }
 .landing section .container {
   display: flex;
@@ -55,15 +62,63 @@ body {
   font-weight: normal;
   align-items: flex-end;
 }
-.landing section .container .text button {
+.landing section .container .text .buttons {
+  display: flex;
+}
+.landing section .container .text .buttons .view {
   width: fit-content;
   color: blue;
   background-color: white;
   transition: 0.3s;
 }
-.landing section .container .text button:hover {
+.landing section .container .text .buttons .view:hover {
   width: fit-content;
   color: #000;
   background-color: #eee;
+}
+.landing .svg1,
+.landing .svg2 {
+  position: absolute;
+  bottom: -200px;
+  width: 100%;
+  /* opacity: 0.1; */
+  z-index: 1;
+}
+.landing .svg1 {
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .landing nav .container .buttons .sign,
+  .landing nav .container .buttons .log {
+    display: none;
+  }
+  .landing section .container .text {
+    text-align: center;
+    align-items: center;
+  }
+  .landing section .container .text .buttons {
+    margin: auto;
+    gap: 5px;
+  }
+  .landing section .container .text .buttons .log {
+    display: block !important;
+  }
+  .landing section .container img {
+    display: none;
+  }
+  .landing .svg1,
+  .landing .svg2 {
+    bottom: -100px !important;
+  }
+}
+@media (max-width: 991px) {
+  .landing section .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landing .svg1,
+  .landing .svg2 {
+    bottom: -150px;
+  }
 }
 /* Ending Landing */
