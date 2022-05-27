@@ -15,6 +15,9 @@ ul {
 li {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 /* Starting Landing */
 .landing {
   background-image: linear-gradient(to bottom, #4169e1, #9cb1ef);
@@ -85,8 +88,7 @@ li {
 .landing .svg1,
 .landing .svg2 {
   position: absolute;
-  bottom: -200px;
-  width: 100%;
+  bottom: -150px;
   z-index: 1;
 }
 .landing .svg1 {
@@ -136,6 +138,7 @@ li {
 }
 .future .container .box i {
   font-size: 30px;
+  margin-bottom: 15px;
 }
 .future .container .gray,
 .future .container .gray {
